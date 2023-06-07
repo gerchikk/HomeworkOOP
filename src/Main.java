@@ -21,6 +21,13 @@ public class Main {
                 new Slizerin("Грэхэм Монтегю", 35, 63, 57, 34,24, 75, 25),
                 new Slizerin("Грегори Гойл", 24, 25, 28, 42, 75, 35, 75),
         };
-
+        Methods methods = new Methods();
+        Methods.print(griffindors);
+        System.out.println("Следующий факультет");
+        Methods.print(puffendujs);
+        System.out.println("Следующий факультет");
+        Methods.print(kogtevrans);
+        System.out.println("Следующий факультет");
+        Methods.print(slizerins);
+        };
     }
-}
