@@ -13,7 +13,8 @@ public class Methods {
             System.out.println("_____________________________");
         }
     }
-    public static void print(Puffenduj [] puffendujs) {
+
+    public static void print(Puffenduj[] puffendujs) {
         System.out.println("_____________________________");
         System.out.println("Численность студентов факультета Пуффендуй - " + puffendujs.length);
         for (int i = 0; i < puffendujs.length; i++) {
@@ -27,7 +28,8 @@ public class Methods {
             System.out.println("_____________________________");
         }
     }
-    public static void print(Kogtevran [] kogtevrans) {
+
+    public static void print(Kogtevran[] kogtevrans) {
         System.out.println("_____________________________");
         System.out.println("Численность студентов факультета Пуффендуй - " + kogtevrans.length);
         for (int i = 0; i < kogtevrans.length; i++) {
@@ -42,7 +44,8 @@ public class Methods {
             System.out.println("_____________________________");
         }
     }
-    public static void print(Slizerin [] slizerins) {
+
+    public static void print(Slizerin[] slizerins) {
         System.out.println("_____________________________");
         System.out.println("Численность студентов факультета Пуффендуй - " + slizerins.length);
         for (int i = 0; i < slizerins.length; i++) {
@@ -56,8 +59,7 @@ public class Methods {
                     + "\nНаходчивость - " + slizerin.getResourcefulness()
                     + "\nЖажда власти - " + slizerin.getLustOfPower());
             System.out.println("_____________________________");
+
         }
     }
-
-
 }

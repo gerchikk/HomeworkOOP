@@ -29,5 +29,9 @@ public class Main {
         Methods.print(kogtevrans);
         System.out.println("Следующий факультет");
         Methods.print(slizerins);
-        };
-    }
+        griffindors[0].compareGriffindorStudent(griffindors[1]);
+        }
+
+
+
+}
