@@ -33,4 +33,15 @@ public class Puffenduj extends Hogwarts {
     public void setHonesty(int honesty) {
         this.honesty = honesty;
     }
+    public void comparePuffendujStudent(Puffenduj otherStudent) {
+        if (otherStudent != null) {
+            int thisStudentPoints = this.getHardWork() + this.getLoyality() + this.getHonesty();
+            int otherStudentPoints = otherStudent.getHardWork() + otherStudent.getLoyality() + otherStudent.getHonesty();
+            if (thisStudentPoints > otherStudentPoints) {
+                System.out.printf("%s лучший пуффендуец, чем %s\n", this.getName(), otherStudent.getName());
+            } else if (thisStudentPoints < otherStudentPoints) {
+                System.out.printf("%s лучший пуффендуец, чем %s\n", otherStudent.getName(), this.getName());
+            } else System.out.println("Одинаковые пуффендуйцы");
+        }
+    }
 }

@@ -1,7 +1,7 @@
 public class Griffindor extends Hogwarts {
-    private static int nobility;
-    private static int honor;
-    private static int courage;
+    private int nobility;
+    private int honor;
+    private int courage;
 
     public Griffindor(String name, int magic, int transgression, int nobility, int honor, int courage) {
         super(name, magic, transgression);
@@ -36,14 +36,12 @@ public class Griffindor extends Hogwarts {
 
     public void compareGriffindorStudent(Griffindor otherStudent) {
         if (otherStudent != null) {
-            int thisStudentPoints = nobility + honor + courage;
-            System.out.println(thisStudentPoints);
+            int thisStudentPoints = this.getNobility() + this.getHonor() + this.getCourage();
             int otherStudentPoints = otherStudent.getNobility() + otherStudent.getHonor() + otherStudent.getCourage();
-            System.out.println(otherStudentPoints);
             if (thisStudentPoints > otherStudentPoints) {
-                System.out.printf("%s лучший грифендорец, чем %s\n", getName(), otherStudent.getName());
+                System.out.printf("%s лучший гриффендорец, чем %s\n", this.getName(), otherStudent.getName());
             } else if (thisStudentPoints < otherStudentPoints) {
-                System.out.printf("%s лучший грфиндорец, чем %s\n", otherStudent.getName(), getName());
+                System.out.printf("%s лучший грффиндорец, чем %s\n", otherStudent.getName(), this.getName());
             } else System.out.println("Одинаковые грифиндорцы");
         }
     }

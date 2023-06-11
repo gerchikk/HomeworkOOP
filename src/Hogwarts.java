@@ -1,5 +1,5 @@
 public class Hogwarts {
-    private static String name;
+    private String name;
     private int magic;
     private int transgression;
 
@@ -31,5 +31,16 @@ public class Hogwarts {
 
     public void setTransgression(int transgression) {
         this.transgression = transgression;
+    }
+    public void compareStudent(Hogwarts otherStudent) {
+        if (otherStudent != null) {
+            int thisStudentPoints = this.getMagic() + this.getTransgression();
+            int otherStudentPoints = otherStudent.getMagic() + otherStudent.getTransgression();
+            if (thisStudentPoints > otherStudentPoints) {
+                System.out.printf("%s лучше по силе магии и трансгрессии, чем %s\n", this.getName(), otherStudent.getName());
+            } else if (thisStudentPoints < otherStudentPoints) {
+                System.out.printf("%s лучше по силе магии и трансгрессии, чем %s\n", otherStudent.getName(), this.getName());
+            } else System.out.println("Студенты одинаковы по силе магии и трансгрессии");
+        }
     }
 }

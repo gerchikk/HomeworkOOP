@@ -43,4 +43,15 @@ public class Kogtevran extends Hogwarts{
     public void setCreativity(int creativity) {
         this.creativity = creativity;
     }
+    public void compareKogtevranStudent(Kogtevran otherStudent) {
+        if (otherStudent != null) {
+            int thisStudentPoints = this.getIntelligence() + this.getWisdom() + this.getWit() + this.getCreativity();
+            int otherStudentPoints = otherStudent.getIntelligence() + otherStudent.getWisdom() + otherStudent.getWit() + otherStudent.getCreativity();
+            if (thisStudentPoints > otherStudentPoints) {
+                System.out.printf("%s лучший когтевранец, чем %s\n", this.getName(), otherStudent.getName());
+            } else if (thisStudentPoints < otherStudentPoints) {
+                System.out.printf("%s лучший когтевранец, чем %s\n", otherStudent.getName(), this.getName());
+            } else System.out.println("Одинаковые когтевранцы");
+        }
+    }
 }

@@ -17,11 +17,10 @@ public class Main {
                 new Kogtevran("Маркус Белби", 63, 52, 73, 46, 38, 35),
         };
         Slizerin[] slizerins = {
-                new Slizerin("Драко Малфой", 70, 72, 65, 75, 25, 35, 34),
+                new Slizerin("Драко Малфой", 70, 61, 65, 75, 85, 35, 34),
                 new Slizerin("Грэхэм Монтегю", 35, 63, 57, 34,24, 75, 25),
                 new Slizerin("Грегори Гойл", 24, 25, 28, 42, 75, 35, 75),
         };
-        Methods methods = new Methods();
         Methods.print(griffindors);
         System.out.println("Следующий факультет");
         Methods.print(puffendujs);
@@ -29,9 +28,23 @@ public class Main {
         Methods.print(kogtevrans);
         System.out.println("Следующий факультет");
         Methods.print(slizerins);
+        System.out.println();
+        System.out.println("Сравнение студентов Гриффиндора:");
         griffindors[0].compareGriffindorStudent(griffindors[1]);
-        }
-
-
-
+        System.out.println("Сравнение студентов Пуффендуя:");
+        puffendujs[1].comparePuffendujStudent(puffendujs[2]);
+        System.out.println("Сравнение студентов Когтеврана:");
+        kogtevrans[2].compareKogtevranStudent(kogtevrans[0]);
+        System.out.println("Сравнение студентов Слизерина:");
+        slizerins[0].compareSlizerinStudent(slizerins[2]);
+        System.out.println();
+        System.out.println("Сравнение студентов Гриффиндора и Слизерина:");
+        griffindors[0].compareStudent(slizerins[0]);
+        System.out.println("Сравнение студентов Слизерина и Пуффендуя:");
+        slizerins[1].compareStudent(puffendujs[2]);
+        System.out.println("Сравнение студентов Пуффендуя и Когтеврана:");
+        puffendujs[1].compareStudent(kogtevrans[0]);
+        System.out.println("Сравнение студентов Когтеврана и Гриффиндора:");
+        kogtevrans[1].compareStudent(griffindors[2]);
+    }
 }
